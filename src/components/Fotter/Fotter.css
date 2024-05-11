@@ -1,0 +1,83 @@
+#fotter{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.fotter{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px;
+    gap: 20px;
+}
+.fotterTop{
+    display: flex;
+    justify-content: space-between;
+}
+.fotterTopLeft p{
+    font-size: 20px;
+    max-width: 400px;
+    line-height: 30px;
+}
+.fotterTopRight{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.fotterEmail{
+    display: flex;
+    gap: 30px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background-color: #32323B;
+    padding-right: 80px;
+}
+.fotterEmail input{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    color: #a0a0a0;
+    font-family: outfit;
+}
+.fotterEmail:hover{
+    border: 2px solid white;
+    transition: 0.3s;
+}
+.subscrib_btn{
+    font-size: 20px;
+    font-family: outfit;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+}
+.subscrib_btn:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.fotterBottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.fotterBottomRight{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px){
+    .fotterTop{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .fotterBottom{
+        flex-direction: column-reverse;
+    }
+    .fotterBottomLeft{
+        margin-top: -20px;
+    }
+}

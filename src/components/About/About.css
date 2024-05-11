@@ -1,0 +1,177 @@
+#about {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.about-section {
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.about-image img {
+  width: 330px;
+  height: 500px;
+  /* border-radius: 50%; */
+  /* border-bottom-left-radius: 30%; 
+    border-bottom-right-radius: 100%;  */
+}
+.aboutTittle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 40px 0px;
+}
+
+.aboutTittle h1 {
+  font-size: 65px;
+  font-weight: 600;
+  z-index: 1;
+}
+.aboutTittle img {
+  position: absolute;
+  height: 50px;
+  top: 50px;
+  right: 42%;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-left: 50px; /* Add space between image and description */
+}
+.description p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.aboutSkills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutSkills p {
+  font-size: 20px;
+}
+.skill {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  cursor: pointer;
+  /* transition: 0.3s; */
+}
+.skill p {
+  max-width: 70px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.skill hr {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  height: 8px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+}  
+.skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.about-achievments {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+
+
+@media (max-width: 768px){
+  .about-section {
+    padding: 80px 100px; 
+     align-items: start;
+  }
+  .aboutTittle h1{
+    font-size: 50px;
+  }
+  .aboutTittle img {
+    height: 50px;
+    top: 35px;
+    right: 0;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .about-image{
+    display: none;
+  }
+  .about-description{
+    margin-left: 0px;
+  }
+  .description p{
+    font-size: 18px;
+  }
+  .aboutSkills p{
+    font-size: 18px;
+  }
+  .skill p{
+    font-size: 18px;  
+  }
+  .skill hr{
+    height: 6px;  
+  }
+  .about-achievments{
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+    .circle {
+      animation: circle infinite 20s linear;
+    }
+  }
+  @keyframes circle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */

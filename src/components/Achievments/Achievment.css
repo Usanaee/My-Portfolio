@@ -1,0 +1,51 @@
+.achievment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .achievment h1 {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.01%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .achievment p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .achievment:hover {
+    transform: scale(1.12);
+    transition: 0.3s;
+  }
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #b415ff;
+    background-color: transparent;
+  }
+  .achievment:hover .circle {
+    box-shadow: 0 0 30px rgba(180, 21, 255, 0.5);
+  }
+
+  @media (max-width: 768px){
+     .achievment{
+      gap:10px;
+     }
+     .achievment h1{
+      font-size: 30px;
+     }
+     .achievment p{
+      font-size: 16px;
+      text-align: center;
+      font-weight: 300;
+     }
+  }
